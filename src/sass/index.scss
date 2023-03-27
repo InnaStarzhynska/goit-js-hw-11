@@ -1,2 +1,98 @@
 @import './common';
-@import './example';
+
+body {
+    font-size: 14px;
+    color: black;
+}
+
+b {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.load-more {
+    display: none;
+}
+
+.visually-button {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff0f0;
+    background-color: #7f96a9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.search-form {
+    background-color: #1570bb;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.search-form input {
+    border-radius: 4px;
+    border: none;
+    width: 300px;
+    height: 30px;
+}
+
+.search-form button {
+    display: inline-block;
+    padding: 2px 20px;
+    border-radius: 4px;
+        border: none;
+        color: #fff0f0;
+        background-color: #7f96a9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+}
+
+.gallery{
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.photo {
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12)
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+.info-item {
+    text-align: center;
+}
+
+.start-page {
+    display: none;
+}
+
+.visually-link{
+    background-color: #1570bb;
+    
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+}
