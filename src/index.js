@@ -18,8 +18,6 @@ refs.form.addEventListener('submit', (evt) => {
     try {
         searchService.searchImages().then(({ data }) => {
             renderingMarkup(data);
-            smoothScroll();
-            refs.buttonLoadMore.classList.add('visually-button');
 
             if (data.hits.length === 0) {
             Notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again.');
@@ -34,12 +32,15 @@ refs.form.addEventListener('submit', (evt) => {
                 Notiflix.Notify.warning('Were sorry, but youve reached the end of search results.');
                 refs.buttonLoadMore.classList.remove('visually-button');
             }
+            smoothScroll();
+            refs.buttonLoadMore.classList.add('visually-button');
+            refs.linkToStartPage.classList.add('visually-link');
             searchService.updatePage()
         }).catch(error => console.log(error));
     } catch (error) {
         console.log(error.message)
     }
-    refs.linkToStartPage.classList.add('visually-link');
+    
 })
 
 refs.buttonLoadMore.addEventListener('click', () => {
