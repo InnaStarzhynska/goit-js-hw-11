@@ -26,8 +26,8 @@ refs.form.addEventListener('submit', (evt) => {
             return
             }
             
-            if (this.page === 1) {
-            Notiflix.Notify.info(`Hooray! We found ${response.data.totalHits} images.`)
+            if (searchService.page === 1) {
+            Notiflix.Notify.info(`Hooray! We found ${data.totalHits} images.`)
             }
             
             if (searchService.page === Math.ceil(data.totalHits/40)) {
